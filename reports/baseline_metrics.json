@@ -1,0 +1,16 @@
+{
+  "train_rows": 699960,
+  "test_rows": 299984,
+  "features": 24,
+  "fraud_count": 11689,
+  "fraud_rate": 0.016699525687182123,
+  "train_missing": 0,
+  "test_missing": 0,
+  "duplicate_train_ids": 0,
+  "validation_auc": 0.9451824190983399,
+  "best_iteration": 305,
+  "validation_rows": 139992,
+  "prediction_min": 9.649004835133606e-06,
+  "prediction_max": 0.9933611059746359,
+  "prediction_mean": 0.0165525991186347
+}

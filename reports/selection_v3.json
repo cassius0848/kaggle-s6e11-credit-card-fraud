@@ -1,0 +1,250 @@
+{
+  "target_public_auc": 0.96,
+  "current_public_auc": 0.94743,
+  "baseline_v2_cv": 0.9468093839291795,
+  "best_single": "lgb_leaf4_encoded",
+  "selected": {
+    "name": "blend_lgb_leaf4_encoded_xgb_depth2_full",
+    "weights": {
+      "lgb_leaf4_encoded": 0.5,
+      "xgb_depth2_full": 0.5
+    },
+    "fold_auc": [
+      0.9491615375969503,
+      0.9492446154859315,
+      0.9478969683907548
+    ],
+    "mean_auc": 0.948767707157879,
+    "pooled_auc": 0.9487561149008688
+  },
+  "candidates": [
+    {
+      "name": "lgb_leaf4_encoded",
+      "weights": {
+        "lgb_leaf4_encoded": 1.0
+      },
+      "fold_auc": [
+        0.9488295527229123,
+        0.9490188749455292,
+        0.947511082155159
+      ],
+      "mean_auc": 0.9484531699412001,
+      "pooled_auc": 0.9484336115335659
+    },
+    {
+      "name": "lgb_leaf4_encoded_with_v2_0.25",
+      "weights": {
+        "lgb_leaf4_encoded": 0.25,
+        "v2": 0.75
+      },
+      "fold_auc": [
+        0.9486557188018261,
+        0.9485605626332058,
+        0.9463855655350375
+      ],
+      "mean_auc": 0.9478672823233566,
+      "pooled_auc": 0.9478408624202361
+    },
+    {
+      "name": "lgb_leaf4_encoded_with_v2_0.5",
+      "weights": {
+        "lgb_leaf4_encoded": 0.5,
+        "v2": 0.5
+      },
+      "fold_auc": [
+        0.9491877448682123,
+        0.9490418825243343,
+        0.9471206324747499
+      ],
+      "mean_auc": 0.9484500866224321,
+      "pooled_auc": 0.9484295323309175
+    },
+    {
+      "name": "lgb_leaf4_encoded_with_v2_0.75",
+      "weights": {
+        "lgb_leaf4_encoded": 0.75,
+        "v2": 0.25
+      },
+      "fold_auc": [
+        0.9492997900428934,
+        0.9491963661374696,
+        0.9475092724361129
+      ],
+      "mean_auc": 0.948668476205492,
+      "pooled_auc": 0.9486502710399649
+    },
+    {
+      "name": "cat_gpu_depth3_full",
+      "weights": {
+        "cat_gpu_depth3_full": 1.0
+      },
+      "fold_auc": [
+        0.9469804560457667,
+        0.9487598564847983,
+        0.9464561244449881
+      ],
+      "mean_auc": 0.9473988123251843,
+      "pooled_auc": 0.9473813858218776
+    },
+    {
+      "name": "cat_gpu_depth3_full_with_v2_0.25",
+      "weights": {
+        "cat_gpu_depth3_full": 0.25,
+        "v2": 0.75
+      },
+      "fold_auc": [
+        0.9482262596602967,
+        0.9486642416190074,
+        0.9462882735627146
+      ],
+      "mean_auc": 0.947726258280673,
+      "pooled_auc": 0.9477003051886573
+    },
+    {
+      "name": "cat_gpu_depth3_full_with_v2_0.5",
+      "weights": {
+        "cat_gpu_depth3_full": 0.5,
+        "v2": 0.5
+      },
+      "fold_auc": [
+        0.9483121658089044,
+        0.9491182231587779,
+        0.9468233139787462
+      ],
+      "mean_auc": 0.9480845676488096,
+      "pooled_auc": 0.9480649692246625
+    },
+    {
+      "name": "cat_gpu_depth3_full_with_v2_0.75",
+      "weights": {
+        "cat_gpu_depth3_full": 0.75,
+        "v2": 0.25
+      },
+      "fold_auc": [
+        0.9479450178810449,
+        0.9491647372894074,
+        0.9468995369290234
+      ],
+      "mean_auc": 0.948003097366492,
+      "pooled_auc": 0.947986845744581
+    },
+    {
+      "name": "xgb_depth2_full",
+      "weights": {
+        "xgb_depth2_full": 1.0
+      },
+      "fold_auc": [
+        0.9483517653593829,
+        0.9486049880135493,
+        0.9473463434751386
+      ],
+      "mean_auc": 0.9481010322826903,
+      "pooled_auc": 0.9480855956237324
+    },
+    {
+      "name": "xgb_depth2_full_with_v2_0.25",
+      "weights": {
+        "xgb_depth2_full": 0.25,
+        "v2": 0.75
+      },
+      "fold_auc": [
+        0.9486143353668639,
+        0.9485683258031219,
+        0.9464486607520374
+      ],
+      "mean_auc": 0.947877107307341,
+      "pooled_auc": 0.9478492456801122
+    },
+    {
+      "name": "xgb_depth2_full_with_v2_0.5",
+      "weights": {
+        "xgb_depth2_full": 0.5,
+        "v2": 0.5
+      },
+      "fold_auc": [
+        0.9490115838980663,
+        0.9489691465783857,
+        0.9471706827268338
+      ],
+      "mean_auc": 0.9483838044010953,
+      "pooled_auc": 0.9483614846727959
+    },
+    {
+      "name": "xgb_depth2_full_with_v2_0.75",
+      "weights": {
+        "xgb_depth2_full": 0.75,
+        "v2": 0.25
+      },
+      "fold_auc": [
+        0.9489467923633554,
+        0.9489922246399267,
+        0.9474736283529492
+      ],
+      "mean_auc": 0.9484708817854104,
+      "pooled_auc": 0.948453064499989
+    },
+    {
+      "name": "blend_lgb_leaf4_encoded_xgb_depth2_full",
+      "weights": {
+        "lgb_leaf4_encoded": 0.5,
+        "xgb_depth2_full": 0.5
+      },
+      "fold_auc": [
+        0.9491615375969503,
+        0.9492446154859315,
+        0.9478969683907548
+      ],
+      "mean_auc": 0.948767707157879,
+      "pooled_auc": 0.9487561149008688
+    },
+    {
+      "name": "blend_lgb_leaf4_encoded_cat_gpu_depth3_full",
+      "weights": {
+        "lgb_leaf4_encoded": 0.5,
+        "cat_gpu_depth3_full": 0.5
+      },
+      "fold_auc": [
+        0.9488028252219324,
+        0.9494503310979103,
+        0.9476616109614956
+      ],
+      "mean_auc": 0.9486382557604461,
+      "pooled_auc": 0.9486241618062186
+    },
+    {
+      "name": "blend_xgb_depth2_full_cat_gpu_depth3_full",
+      "weights": {
+        "xgb_depth2_full": 0.5,
+        "cat_gpu_depth3_full": 0.5
+      },
+      "fold_auc": [
+        0.9482137025455626,
+        0.9490509087896294,
+        0.9473087973973904
+      ],
+      "mean_auc": 0.9481911362441942,
+      "pooled_auc": 0.9481800600903144
+    },
+    {
+      "name": "equal_three_v3",
+      "weights": {
+        "lgb_leaf4_encoded": 0.3333333333333333,
+        "xgb_depth2_full": 0.3333333333333333,
+        "cat_gpu_depth3_full": 0.3333333333333333
+      },
+      "fold_auc": [
+        0.9489525484534573,
+        0.9494105598156863,
+        0.9477902553655734
+      ],
+      "mean_auc": 0.948717787878239,
+      "pooled_auc": 0.9487074832927465
+    }
+  ],
+  "shortlist": [
+    "lgb_leaf4_encoded",
+    "cat_gpu_depth3_full",
+    "xgb_depth2_full"
+  ],
+  "notes": "Development selection reuses CV labels. Public target not confirmed until a Kaggle submission is scored. GPU methods have different defaults than CPU. Original public data is CC0 and officially linked."
+}

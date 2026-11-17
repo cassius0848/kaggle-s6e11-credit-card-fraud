@@ -1,0 +1,28 @@
+[
+  {
+    "version": "baseline",
+    "submission_file": "submission_baseline.csv",
+    "public_auc": 0.94612,
+    "rank": 1587,
+    "source": "user-reported",
+    "reported_date": "2026-11-17"
+  },
+  {
+    "version": "v2_equal_three",
+    "submission_file": "submission_v2_recommended.csv",
+    "public_auc": 0.94743,
+    "rank": 1216,
+    "source": "user-reported",
+    "reported_date": "2026-11-17"
+  },
+  {
+    "version": "v3_lgb_xgb_blend",
+    "submission_file": "submission_v3_recommended.csv",
+    "public_auc": 0.9491,
+    "source": "user-reported",
+    "reported_date": "2026-11-17",
+    "delta_vs_previous": 0.00167,
+    "target_public_auc": 0.96,
+    "gap_to_target": 0.0109
+  }
+]

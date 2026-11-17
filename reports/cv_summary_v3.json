@@ -1,0 +1,104 @@
+{
+  "lgb_leaf4_encoded": {
+    "name": "lgb_leaf4_encoded",
+    "fold_auc": [
+      0.9488295527229123,
+      0.9490188749455292,
+      0.947511082155159
+    ],
+    "mean_auc": 0.9484531699412001,
+    "pooled_auc": 0.9484336115335659,
+    "iterations": [
+      3196,
+      1681,
+      2368
+    ],
+    "config": {
+      "kind": "lgb",
+      "mode": "encoded",
+      "params": {
+        "objective": "binary",
+        "learning_rate": 0.03,
+        "num_leaves": 4,
+        "min_child_samples": 200,
+        "reg_lambda": 10.0,
+        "max_bin": 127,
+        "colsample_bytree": 1.0,
+        "random_state": 42,
+        "n_jobs": 8,
+        "verbosity": -1
+      }
+    }
+  },
+  "cat_gpu_depth3_full": {
+    "name": "cat_gpu_depth3_full",
+    "fold_auc": [
+      0.9469804560457667,
+      0.9487598564847983,
+      0.9464561244449881
+    ],
+    "mean_auc": 0.9473988123251843,
+    "pooled_auc": 0.9473813858218776,
+    "iterations": [
+      3965,
+      3990,
+      4000
+    ],
+    "config": {
+      "kind": "cat",
+      "mode": "full",
+      "params": {
+        "loss_function": "Logloss",
+        "eval_metric": "AUC",
+        "depth": 3,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 10.0,
+        "task_type": "GPU",
+        "devices": "0",
+        "bootstrap_type": "Bernoulli",
+        "subsample": 0.8,
+        "boosting_type": "Plain",
+        "max_ctr_complexity": 2,
+        "border_count": 128,
+        "thread_count": 8,
+        "random_seed": 42,
+        "allow_writing_files": false
+      }
+    }
+  },
+  "xgb_depth2_full": {
+    "name": "xgb_depth2_full",
+    "fold_auc": [
+      0.9483517653593829,
+      0.9486049880135493,
+      0.9473463434751386
+    ],
+    "mean_auc": 0.9481010322826903,
+    "pooled_auc": 0.9480855956237324,
+    "iterations": [
+      3238,
+      2363,
+      2430
+    ],
+    "config": {
+      "kind": "xgb",
+      "mode": "full",
+      "params": {
+        "objective": "binary:logistic",
+        "eval_metric": "auc",
+        "tree_method": "hist",
+        "device": "cuda",
+        "max_depth": 2,
+        "learning_rate": 0.04,
+        "min_child_weight": 10.0,
+        "reg_lambda": 10.0,
+        "max_bin": 128,
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "enable_categorical": true,
+        "n_jobs": 8,
+        "random_state": 42
+      }
+    }
+  }
+}

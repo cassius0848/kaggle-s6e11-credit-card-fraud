@@ -1,0 +1,102 @@
+{
+  "best_single": "lgb_shallow",
+  "best_single_cv": {
+    "name": "lgb_shallow",
+    "config": {
+      "kind": "lgb",
+      "params": {
+        "objective": "binary",
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "max_depth": -1,
+        "min_child_samples": 200,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 10.0,
+        "n_jobs": 4,
+        "random_state": 42,
+        "verbosity": -1
+      },
+      "features": "raw"
+    },
+    "fold_auc": [
+      0.9469684583178257,
+      0.9472574722171824,
+      0.9442018296838933
+    ],
+    "mean_auc": 0.9461425867396338,
+    "std_auc": 0.0013773853783068328,
+    "pooled_auc": 0.9460852095473007,
+    "iterations": [
+      894,
+      696,
+      1237
+    ]
+  },
+  "blends": [
+    {
+      "name": "blend_lgb_shallow_cat_depth6",
+      "weights": {
+        "lgb_shallow": 0.5,
+        "cat_depth6": 0.5
+      },
+      "fold_auc": [
+        0.9475901317116927,
+        0.9475498211805999,
+        0.9450898089350641
+      ],
+      "mean_auc": 0.9467432539424522,
+      "pooled_auc": 0.946711884729533
+    },
+    {
+      "name": "blend_lgb_shallow_lgb_shallow_ratios",
+      "weights": {
+        "lgb_shallow": 0.5,
+        "lgb_shallow_ratios": 0.5
+      },
+      "fold_auc": [
+        0.9471352115208833,
+        0.9474291155795864,
+        0.9446024732947013
+      ],
+      "mean_auc": 0.946388933465057,
+      "pooled_auc": 0.9463354166360379
+    },
+    {
+      "name": "blend_cat_depth6_lgb_shallow_ratios",
+      "weights": {
+        "cat_depth6": 0.5,
+        "lgb_shallow_ratios": 0.5
+      },
+      "fold_auc": [
+        0.9475548567805124,
+        0.9475333729713324,
+        0.9452403466893319
+      ],
+      "mean_auc": 0.946776192147059,
+      "pooled_auc": 0.9467429301987225
+    },
+    {
+      "name": "blend_equal_three",
+      "weights": {
+        "lgb_shallow": 0.3333333333333333,
+        "cat_depth6": 0.3333333333333333,
+        "lgb_shallow_ratios": 0.3333333333333333
+      },
+      "fold_auc": [
+        0.9476076662501128,
+        0.9476600393980147,
+        0.9451604461394106
+      ],
+      "mean_auc": 0.9468093839291795,
+      "pooled_auc": 0.9467720602400126
+    }
+  ],
+  "blend_selected": true,
+  "selected_name": "blend_equal_three",
+  "selected_weights": {
+    "lgb_shallow": 0.3333333333333333,
+    "cat_depth6": 0.3333333333333333,
+    "lgb_shallow_ratios": 0.3333333333333333
+  },
+  "selection_note": "Small development search. Not nested CV; improvement must be confirmed on Kaggle. No public-score optimization performed."
+}

@@ -1,0 +1,17 @@
+experiment,evaluation,auc,std_auc,iterations,seconds
+lgb_baseline,80/20 holdout,0.9451824190983399,,305.0,8.38
+lgb_shallow,80/20 holdout,0.9453959011276372,,695.0,15.95
+lgb_regularized,80/20 holdout,0.9450692244671968,,889.0,21.76
+lgb_flexible,80/20 holdout,0.9446781763224474,,442.0,16.23
+cat_depth6,80/20 holdout,0.9445882140892472,,1273.0,401.17
+lgb_shallow_ratios,80/20 holdout,0.9450970554941293,,685.0,12.75
+lgb_shallow_context,80/20 holdout,0.9437911132190785,,545.0,10.36
+lgb_shallow_combined,80/20 holdout,0.9434314165381837,,539.0,11.03
+lgb_baseline,3-fold CV mean,0.9458520973870032,0.0013393381558112097,442.0,
+lgb_shallow,3-fold CV mean,0.9461425867396338,0.0013773853783068328,894.0,
+cat_depth6,3-fold CV mean,0.9460989506414714,0.001020338547542033,1141.0,
+lgb_shallow_ratios,3-fold CV mean,0.9461120216783058,0.001175043793304959,981.0,
+blend_lgb_shallow_cat_depth6,OOF blend CV mean,0.9467432539424522,0.0011692779906340549,,
+blend_lgb_shallow_lgb_shallow_ratios,OOF blend CV mean,0.946388933465057,0.001268903688000296,,
+blend_cat_depth6_lgb_shallow_ratios,OOF blend CV mean,0.946776192147059,0.001086042154194089,,
+blend_equal_three,OOF blend CV mean,0.9468093839291795,0.0011661711173896886,,

@@ -1,0 +1,78 @@
+{
+  "rows": 299984,
+  "repetitions": 3,
+  "threads": 4,
+  "load_data_seconds": 0.08320029999595135,
+  "logical_cpu_count": 32,
+  "models": [
+    {
+      "name": "lgb_shallow",
+      "model_load_seconds": 0.014064700000744779,
+      "preprocess_seconds": 0.11049370000546332,
+      "batch_predict_seconds": [
+        3.4173343000002205,
+        5.138137599999027,
+        5.2481537999992725
+      ],
+      "median_batch_predict_seconds": 5.138137599999027,
+      "rows_per_second": 58383.80038713966,
+      "file_bytes": 1615431,
+      "median_50k_seconds_by_threads": {
+        "1": 3.5346554000061587,
+        "4": 0.8645939999987604
+      },
+      "recorded_fit_seconds_total": 91.85
+    },
+    {
+      "name": "cat_depth6",
+      "model_load_seconds": 0.00682539999979781,
+      "preprocess_seconds": 0.05766120000043884,
+      "batch_predict_seconds": [
+        0.745666999995592,
+        0.7689673999993829,
+        0.3628353000021889
+      ],
+      "median_batch_predict_seconds": 0.745666999995592,
+      "rows_per_second": 402302.9046501633,
+      "file_bytes": 1385640,
+      "median_50k_seconds_by_threads": {
+        "1": 0.09834520000003977,
+        "4": 0.06030379999720026
+      },
+      "pool_build_seconds": 0.27729610000096727,
+      "median_prebuilt_pool_predict_seconds": 0.08024330000625923,
+      "resolved_training_params": {
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "one_hot_max_size": 2,
+        "max_ctr_complexity": 4,
+        "leaf_estimation_iterations": 10,
+        "border_count": 254,
+        "depth": 6
+      },
+      "recorded_fit_seconds_total": 1274.1
+    },
+    {
+      "name": "lgb_shallow_ratios",
+      "model_load_seconds": 0.01002860000153305,
+      "preprocess_seconds": 0.09781259999726899,
+      "batch_predict_seconds": [
+        3.5725960999989184,
+        3.5561316999956034,
+        3.582481999997981
+      ],
+      "median_batch_predict_seconds": 3.5725960999989184,
+      "rows_per_second": 83968.07016614356,
+      "file_bytes": 1774531,
+      "median_50k_seconds_by_threads": {
+        "1": 2.2231261000051745,
+        "4": 0.6029505999977118
+      },
+      "recorded_fit_seconds_total": 78.93
+    }
+  ],
+  "blend_seconds": 0.00297100000170758,
+  "total_warm_batch_seconds_sequential": 9.459371699995245,
+  "total_models_bytes": 4775602,
+  "prediction_matches_current_submission": true
+}

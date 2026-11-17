@@ -1,0 +1,8 @@
+{
+  "source": "https://www.kaggle.com/datasets/uditjain13/credit-card-fraud-detection-2026",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/uditjain13/credit-card-fraud-detection-2026",
+  "license": "CC0: Public Domain, verified on dataset page",
+  "competition_data_description": "Competition dataset inspired by this dataset; distributions differ",
+  "competition_external_data_rule": "Publicly accessible external data permitted, checked on competition rules page",
+  "sha256": "4e32b1ad4880cae452d1f2e5aa53224d38eb913c185455c00a3759df5eb3da61"
+}
