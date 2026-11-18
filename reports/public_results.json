@@ -58,5 +58,17 @@
     "verified_date": "2026-11-18",
     "sha256": "2e984f68ae14a770b7b05fcbe76b2153561c7ca461cf31b1c9dbc33c82b81b34",
     "method": "Direct download of the scored V2 output"
+  },
+  {
+    "version": "public_reference_095489",
+    "public_auc": null,
+    "author_public_auc": 0.95489,
+    "source": "kaggle-notebook-output",
+    "source_url": "https://www.kaggle.com/code/goodpjw2008/s6e11-board-model-realmlp-lb-0-95489?scriptVersionId=371005551",
+    "source_file": "submission.csv",
+    "submission_file": "submission_v8_095489.csv",
+    "verified_date": "2026-11-18",
+    "sha256": "504f06e9b25e989fb0ceca4ed34d04ddbc975eb4b987420009025dcc99fe4413",
+    "method": "Direct download of the scored V5 output"
   }
 ]

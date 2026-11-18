@@ -140,4 +140,8 @@ V4 首轮实验已完成，结果见 [research_report_v4.md](reports/research_re
 
 ## 最新公开参照
 
-2026-11-18 核验了另一份公开 V2 输出。该版本在 Kaggle 的 Public AUC 为 **0.95450**。本项目直接采用作者发布的 `submission.csv`，核对了全部 299,984 行的编号、顺序和预测范围。对应版本和文件指纹见[公开结果记录](reports/public_results.json)。这项成绩归属于来源版本，本项目的独立训练成绩见上表。
+已核验同一公开方案的两个版本。V2 的公开 AUC 为 **0.95450**，V5 为 **0.95489**。两次均使用来源版本发布的 `submission.csv`。本地自训模型的成绩见上表。V5 作者报告最后一步在五个本地验证折上的 AUC 均下降。固定版本链接和文件指纹见[公开结果记录](reports/public_results.json)。
+
+从仓库根目录运行以下命令可核对 V5 文件的内容、格式及 ID 顺序。示例假设两个 CSV 分别存放在仓库的 `outputs/` 和 `data/` 中；如使用独立比赛工作目录，请替换对应路径。
+
+    python -m scripts.validate_submission outputs/submission_v8_095489.csv --sample data/sample_submission.csv --sha256 504f06e9b25e989fb0ceca4ed34d04ddbc975eb4b987420009025dcc99fe4413
