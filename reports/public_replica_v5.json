@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-11-17T22:04:16.864343+00:00",
+  "method": "Fixed ensemble of two public prediction files; no base-model training",
+  "source_url": "https://www.kaggle.com/code/asteriospanoras/s6e11-lb-0-95447-top-public-fully-explained?scriptVersionId=370693718",
+  "author_public_score": 0.95447,
+  "our_kaggle_public_score": null,
+  "local_cv_score": null,
+  "author_fingerprint_matches": true,
+  "author_fingerprint_bits": 256,
+  "reference_bytes_equal": true,
+  "reference": "F:\\Kaggle\\playground-series-s6e11\\work\\replica_v5\\reference\\asteriospanoras_v19\\submission.csv",
+  "output": "F:\\Kaggle\\playground-series-s6e11\\outputs\\submission_v5_replica_095447.csv",
+  "sha256": "c5c95aaffb517f0c9563bd8fb15a30926dcf5515efed477234630d6bbe5ad625",
+  "rows": 299984,
+  "columns": [
+    "id",
+    "is_fraud"
+  ],
+  "id_order_matches_test": true,
+  "min_prediction": 1.6667555602965492e-06,
+  "max_prediction": 0.9999983332444397,
+  "unique_predictions": 299984,
+  "inputs": {
+    "T": {
+      "path": "F:\\Kaggle\\playground-series-s6e11\\work\\replica_v5\\inputs\\public-board-files\\goodpjw2008_boardmodel_v1_submission_0p95442.csv",
+      "sha256": "1d387b2d27e10395c97a55bc1511ebe2f47aed9bc1e5a6a221810c5ae6adfed3"
+    },
+    "S_B": {
+      "path": "F:\\Kaggle\\playground-series-s6e11\\work\\replica_v5\\inputs\\public-board-files\\goodpjw2008_boardmodel_v1_submission.csv",
+      "sha256": "5ffed52a3f77768d8b0c9f45843f4388a49e546deaa871d5b4328244fc2ea7a6"
+    }
+  },
+  "seconds": 0.6252612000000681,
+  "environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.5",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1"
+  },
+  "limitation": "The final 1.5 multiplier was selected on the public leaderboard. No independent CV supports this extra half-step or guarantees the private score.",
+  "our_kaggle_public_rank": 25,
+  "rank_source": "user-reported",
+  "rank_reported_date": "2026-11-17",
+  "score_confirmation": "Exact account public score not separately provided; author score remains distinct."
+}

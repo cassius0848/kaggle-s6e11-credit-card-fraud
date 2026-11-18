@@ -24,3 +24,8 @@ kaggle.json
 Thumbs.db
 .vscode/
 .idea/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors

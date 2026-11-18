@@ -24,5 +24,39 @@
     "delta_vs_previous": 0.00167,
     "target_public_auc": 0.96,
     "gap_to_target": 0.0109
+  },
+  {
+    "version": "v4_v3_tabm_blend",
+    "submission_file": "submission_v4_research.csv",
+    "public_auc": 0.94913,
+    "source": "user-reported",
+    "reported_date": "2026-11-17",
+    "delta_vs_previous": 3e-05,
+    "target_public_auc": 0.96,
+    "gap_to_target": 0.01087,
+    "sha256": "9b0ffbe54bede93b3228fc05779d52b7561bc022d58e9932e682abc3c487e796"
+  },
+  {
+    "version": "v5_public_replica",
+    "submission_file": "submission_v5_replica_095447.csv",
+    "public_auc": null,
+    "rank": 25,
+    "source": "user-reported",
+    "reported_date": "2026-11-17",
+    "method": "Fixed public-prediction ensemble reproduction; no base-model retraining",
+    "author_public_auc": 0.95447,
+    "score_confirmation": "User reported rank 25 after submission; exact account score not separately provided.",
+    "sha256": "c5c95aaffb517f0c9563bd8fb15a30926dcf5515efed477234630d6bbe5ad625"
+  },
+  {
+    "version": "public_reference_095450",
+    "public_auc": null,
+    "author_public_auc": 0.9545,
+    "source": "kaggle-notebook-output",
+    "source_url": "https://www.kaggle.com/code/goodpjw2008/s6e11-board-model-realmlp-lb-0-95450?scriptVersionId=370816964",
+    "source_file": "submission.csv",
+    "verified_date": "2026-11-18",
+    "sha256": "2e984f68ae14a770b7b05fcbe76b2153561c7ca461cf31b1c9dbc33c82b81b34",
+    "method": "Direct download of the scored V2 output"
   }
 ]

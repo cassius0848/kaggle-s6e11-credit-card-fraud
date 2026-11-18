@@ -1,0 +1,24 @@
+Public replica V5 attribution
+
+Recipe and code reference (Apache-2.0):
+Asterios Panoras, S6E11 | LB 0.95447 | Top Public, Fully Explained.
+Kaggle scored version 19, scriptVersionId=370693718.
+https://www.kaggle.com/code/asteriospanoras/s6e11-lb-0-95447-top-public-fully-explained?scriptVersionId=370693718
+
+Inputs (Apache-2.0 as attributed by the dataset author):
+goodpjw2008, S6E11 | Board Model + RealMLP.
+Pinned by Asterios Panoras in:
+https://www.kaggle.com/datasets/asteriospanoras/s6e11-public-board-files
+
+The underlying public models and prediction lineage are credited in the source
+notebook, including Areeb Ali, Alex Chilton, Aman Atar, BhuvanNR, Vladimir Demidov
+(yekenot), goodpjw2008 and the other authors of the public prediction streams.
+
+Local changes: extracted the final published fixed formula into a standalone CLI;
+added complete input/output SHA-256 validation, ID/schema checks, explicit LF
+CSV output, pandas 2.3.3 compatibility guard and reproducibility metadata.
+The downloaded notebook is archived for provenance; it is not executed.
+Predictions, datasets, downloaded archives and environments are excluded from Git.
+
+The Apache-2.0 notice applies to this referenced recipe and its local adaptation;
+it does not relicense unrelated repository files or competition data.

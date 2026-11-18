@@ -1,0 +1,48 @@
+{
+  "objective": "Measure independent contribution of frozen local predictions to a public nested-OOF stack; do not probe leaderboard weights.",
+  "bases": [
+    "wide_lm_stack",
+    "wide_stack"
+  ],
+  "own_candidates": [
+    "v3_tree_blend",
+    "v4_tree_tabm_blend",
+    "tabm_ple_encoded",
+    "tabm_ple_raw"
+  ],
+  "weights": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "transform": "Global average ranks -> (rank-0.5)/n -> logit; fixed convex blend of transformed scores.",
+  "selection_gate": {
+    "primary_mean_five_fold_delta_at_least": 2e-05,
+    "primary_positive_five_folds_at_least": 4,
+    "primary_worst_fold_delta_at_least": -2e-05,
+    "positive_local_three_folds_required": 3,
+    "conditional_95_lower_bound_positive": true,
+    "secondary_base_pooled_delta_positive": true
+  },
+  "tie_break": "Among eligible candidates within 0.000002 pooled AUC of the best, prefer the smallest own weight.",
+  "output_policy": "Generate candidates only if the fixed diagnostic gate passes. V5-based transfer is experimental because V5 has no true OOF counterpart.",
+  "limits": [
+    "Historical OOF data were reused in previous development; this is exploratory development evidence, not untouched testing.",
+    "Public five-fold split and local three-fold split differ. Reporting by both partitions is a sensitivity check, not full nested retraining.",
+    "Local V3 trees used validation early stopping. Public stack OOF provenance is based on the source author.",
+    "Paired intervals condition on fixed predictions and do not account for model selection or dependence among CV-trained models.",
+    "The 0.95447 public-board-tuned V5 file cannot receive a valid local CV score from these files."
+  ],
+  "public_sha256": {
+    "bundle": "0fe4ab1263a673c8065d7145590b92da440263161bf860ce45f2976b5c4fa56f",
+    "wide_lm_oof": "69375871698f1adf2b4c666fc7f5180edf00ac6836668353b8e7e4ca43eb2722",
+    "wide_lm_test": "b37471e6c34a50715284e807d68e15e5f3ad033e72400904f27876b24041f8cc",
+    "wide_oof": "a829d980d77751fc5890478b036d310329293044e4a360891bac04e3e066f82b",
+    "wide_test": "3284788a79e36ba45a86d364d56a2d483e1842d17f5577aa3a6010c2505c7502"
+  },
+  "v5_sha256": "c5c95aaffb517f0c9563bd8fb15a30926dcf5515efed477234630d6bbe5ad625",
+  "v4_sha256": "9b0ffbe54bede93b3228fc05779d52b7561bc022d58e9932e682abc3c487e796"
+}

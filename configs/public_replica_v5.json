@@ -1,0 +1,23 @@
+{
+  "source_url": "https://www.kaggle.com/code/asteriospanoras/s6e11-lb-0-95447-top-public-fully-explained?scriptVersionId=370693718",
+  "source_notebook_sha256": "304124afa93339f12cc7b0ff20b8f056a71a28947497e02250d8ec45d9c0ff04",
+  "author": "Asterios Panoras",
+  "author_public_score": 0.95447,
+  "license": "Apache-2.0",
+  "dataset_url": "https://www.kaggle.com/datasets/asteriospanoras/s6e11-public-board-files",
+  "dataset_download_url": "https://www.kaggle.com/api/v1/datasets/download/asteriospanoras/s6e11-public-board-files",
+  "expected_rows": 299984,
+  "extrapolation": 1.5,
+  "inputs": {
+    "T": {
+      "filename": "goodpjw2008_boardmodel_v1_submission_0p95442.csv",
+      "sha256": "1d387b2d27e10395c97a55bc1511ebe2f47aed9bc1e5a6a221810c5ae6adfed3"
+    },
+    "S_B": {
+      "filename": "goodpjw2008_boardmodel_v1_submission.csv",
+      "sha256": "5ffed52a3f77768d8b0c9f45843f4388a49e546deaa871d5b4328244fc2ea7a6"
+    }
+  },
+  "expected_output_sha256": "c5c95aaffb517f0c9563bd8fb15a30926dcf5515efed477234630d6bbe5ad625",
+  "required_pandas_version": "2.3.3"
+}
