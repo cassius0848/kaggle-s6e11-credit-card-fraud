@@ -138,7 +138,22 @@ V4 首轮实验已完成，结果见 [research_report_v4.md](reports/research_re
 
 已完成 60 组现有预测的融合与折间尺度对齐检查，没有组合通过预设条件，保留 V5 提交。[实验结论和下一条独立训练路线](reports/public_extension_v6.md)。
 
-## 最新公开参照
+## V27 公开融合复现（0.95553）
+
+V27 从 152 个公开模型的测试集预测出发，重建作者在 Kaggle 公开榜取得 **0.95553** 的提交。已在本地重建全部 299,984 行，生成的 CSV 与获分文件逐字节一致。仓库自训模型的最好公开成绩仍为 **0.94913**。本次核验覆盖预测融合阶段，底层模型使用已发布的预测。[Kaggle 固定版本](https://www.kaggle.com/code/goodpjw2008/s6e11-board-model-realmlp-lb-0-95553?scriptVersionId=372396223)
+
+从仓库根目录运行，先将比赛的 `test.csv` 和 `sample_submission.csv` 放在 `data/`。已有外部数据目录时可在第二条命令后追加 `--data-dir F:/Kaggle/playground-series-s6e11/data`。
+
+    python -m pip install -r requirements-replica.txt
+    python -m scripts.replicate_public_v27 --download-inputs
+
+首次运行会下载 100 个固定版本的输入文件（约 350 MiB）到 `work/v27_inputs/`。下载中断后可重跑同一条命令，程序会校验并复用完整的输入。缓存齐全后可省略 `--download-inputs` 离线复现。请使用上述固定依赖，pandas 的 CSV 浮点解析差异会影响排名相近的样本。
+
+读代码从 [rebuild() 所在的融合脚本](scripts/replicate_public_v27.py) 开始。它先从历史预测中提取前几轮融合尚未覆盖的排序变化，再把该变化与 152 个模型的加权调整叠加到 0.95551 版本上，最后按交易特征把四组低风险样本排到末尾。[融合权重、数据版本和输入指纹](configs/public_replica_v27.json)
+
+输出为 `outputs/submission_v27_095553.csv`。程序在写入前核对样本 ID 和文件 SHA-256，预期值为 `6df59374d81bda24b9029cd666f9b8ad3ef1d1515a6b51b5be7d5bfa7e603432`。0.95553 是作者的公开榜分数，完整融合的独立交叉验证成绩与私榜成绩仍未知。
+
+## 早期公开参照
 
 已核验同一公开方案的两个版本。V2 的公开 AUC 为 **0.95450**，V5 为 **0.95489**。两次均使用来源版本发布的 `submission.csv`。本地自训模型的成绩见上表。V5 作者报告最后一步在五个本地验证折上的 AUC 均下降。固定版本链接和文件指纹见[公开结果记录](reports/public_results.json)。
 
